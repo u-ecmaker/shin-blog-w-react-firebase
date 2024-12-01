@@ -1,0 +1,32 @@
+.sidebar {
+  display: flex;
+  flex: 0.35; // 35% of the screen, 65%はホームで使う。
+  height: 100vh;
+  background-color: gray;
+
+  .sidebarLeft {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+    background-color: black;
+    padding: 7px 15px; // 上下7px, 左右15px.
+
+    .serverIcon {
+      width: 60px;
+      height: 60px;
+      background-color: gray;
+      border-radius: 9999px;
+      margin-bottom: 10px;
+      position: relative; // サーバーアイコンを親要素として配置する。
+
+      img {
+        position: absolute; // それに対しての絶対値を決める。
+        width: 50px;
+        top: 50%; // 50%、
+        left: 50%; // 50% 下げて、
+        transform: translate(-50%, -50%); // 要素自体を50%戻す、と中央に寄る。
+      }
+    }
+  }
+}
