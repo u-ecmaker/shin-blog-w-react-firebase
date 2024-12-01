@@ -32,5 +32,14 @@
 
   .sidebarRight {
     background-color: #2F3136;
+    width: 300px;
+
+    .sidebarTop {
+      color: #fff;
+      display: flex; // 横並びにする。
+      align-items: center; // 交差軸に対して中央揃え。
+      justify-content: space-between; // 余白を空ける。
+      padding: 20px;
+    }
   }
 }
