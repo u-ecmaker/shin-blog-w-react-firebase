@@ -2,21 +2,21 @@
   display: flex;
   flex: 0.35; // 35% of the screen, 65%はホームで使う。
   height: 100vh;
-  background-color: gray;
+  background-color: #35393E; // TODO: 後でhomeに移動させる。
 
   .sidebarLeft {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 15px;
-    background-color: black;
+    background-color: #202225;
     padding: 7px 15px; // 上下7px, 左右15px.
 
     .serverIcon {
       width: 60px;
       height: 60px;
-      background-color: gray;
+      background-color: #35393E;
       border-radius: 9999px;
+      margin-top: 10px;
       margin-bottom: 10px;
       position: relative; // サーバーアイコンを親要素として配置する。
 
@@ -28,5 +28,9 @@
         transform: translate(-50%, -50%); // 要素自体を50%戻す、と中央に寄る。
       }
     }
+  }
+
+  .sidebarRight {
+    background-color: #2F3136;
   }
 }
