@@ -3,4 +3,39 @@
   flex-direction: column;
   flex-grow: 1; // chatの残りの余白を成長させる。<->成長させたくない場合は0。
   background-color: #35393E;
+  
+  .chatInput {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #474b53;
+    border-radius: 5px;
+    margin: 20px;
+    color: lightgray;
+
+    form {
+      flex-grow: 1;
+      input {
+        padding: 15px;
+        background: transparent;
+        border: none;
+        outline: none;
+        color: white;
+        font-size: large;
+        width: 100%;
+      }
+
+      .chatInputButton {
+        display: none;
+      }
+    }
+
+    .chatInputIcons {
+      .MuiSvgIcon-root {
+        padding: 5px;
+        cursor: pointer;
+      }
+    }
+  }
 }
