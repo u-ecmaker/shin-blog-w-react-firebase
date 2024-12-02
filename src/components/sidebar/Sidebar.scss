@@ -19,6 +19,15 @@
       margin-bottom: 10px;
       position: relative; // サーバーアイコンを親要素として配置する。
 
+      .discordIconImg {
+        position: absolute; // それに対しての絶対値を決める。
+        top: 50%; // 50%、
+        left: 50%; // 50% 下げて、
+        transform: translate(-50%, -50%); // 要素自体を50%戻す、と中央に寄る。
+        width: 80%; // Discordアイコン用に調整
+        border-radius: 10px; // Discordアイコン用に調整
+      }
+
       img {
         position: absolute; // それに対しての絶対値を決める。
         width: 50px;
