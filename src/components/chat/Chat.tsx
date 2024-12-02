@@ -3,6 +3,7 @@ import './Chat.scss';
 import ChatHeader from './ChatHeader';
 import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
 import { CardGiftcard, EmojiEmotions, Gif } from '@mui/icons-material';
+import { ChatMessage } from './ChatMessage';
 
 const Chat = () => {
   return (
@@ -10,8 +11,11 @@ const Chat = () => {
       {/* chatHeader */}
       <ChatHeader />
 
-      {/* chatMessage */}
+      {/* chatMessages */}
       <div className="chatMessages">
+        <ChatMessage />
+        <ChatMessage />
+        <ChatMessage />
       </div>
 
       {/* chatInput */}

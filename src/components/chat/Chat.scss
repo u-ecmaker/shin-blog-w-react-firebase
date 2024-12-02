@@ -3,7 +3,11 @@
   flex-direction: column;
   flex-grow: 1; // chatの残りの余白を成長させる。<->成長させたくない場合は0。
   background-color: #35393E;
-  
+
+  .chatMessages {
+    flex-grow: 1;
+  }
+
   .chatInput {
     display: flex;
     align-items: center;
