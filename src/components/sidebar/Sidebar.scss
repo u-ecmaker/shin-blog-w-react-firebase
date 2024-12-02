@@ -1,8 +1,7 @@
 .sidebar {
   display: flex;
-  flex: 0.35; // 35% of the screen, 65%はホームで使う。
+  flex: 0.3; // 30% of the screen, 70%はホームで使う。
   height: 100vh;
-  background-color: #35393E; // TODO: 後でhomeに移動させる。
 
   .sidebarLeft {
     display: flex;
@@ -34,6 +33,7 @@
     background-color: #2F3136;
     width: 300px;
     position: relative;
+    flex-grow: 1; // 空いている余白を成長させて一杯一杯使ってみる。<->成長させたくない場合は0。
 
     .sidebarTop {
       color: #fff;
