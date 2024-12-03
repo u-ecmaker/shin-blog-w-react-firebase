@@ -23,6 +23,7 @@ const useCollection = (data: string) => {
       );
       setDocuments(channelsResult);
     });
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return { documents };

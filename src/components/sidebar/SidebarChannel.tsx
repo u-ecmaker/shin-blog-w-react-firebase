@@ -9,7 +9,7 @@ type Props = {
 
 const SidebarChannel = (props: Props) => {
   const { id, channel } = props;
-  console.log(channel);
+  console.log(id, channel);
 
   return (
     <div className="sidebarChannel">
