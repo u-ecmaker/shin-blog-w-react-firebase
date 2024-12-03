@@ -20,4 +20,5 @@ export const userSlice = createSlice({
 
 // console.log(userSlice);
 
+export const { login, logout } = userSlice.actions; // 分割代入: loginとlogoutにactionsを格納
 export default userSlice.reducer;
