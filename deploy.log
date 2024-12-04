@@ -1,0 +1,88 @@
+$ firebase init
+(node:916256) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/u/study/shin-blog-w-react-firebase
+
+? Which Firebase features do you want to set up for this directory? Press Space to select features, then Enter to confirm your choices. Hosting: Configure files 
+for Firebase Hosting and (optionally) set up GitHub Action deploys
+
+=== Project Setup
+
+First, let's associate this project directory with a Firebase project.
+You can create multiple project aliases by running firebase use --add, 
+but for now we'll just set up a default project.
+
+? Please select an option: Use an existing project
+? Select a default Firebase project for this directory: shin-discord-clone (shin-discord-clone)
+i  Using project shin-discord-clone (shin-discord-clone)
+
+=== Hosting Setup
+
+Your public directory is the folder (relative to your project directory) that
+will contain Hosting assets to be uploaded with firebase deploy. If you
+have a build process for your assets, use your build's output directory.
+
+? What do you want to use as your public directory? build
+? Configure as a single-page app (rewrite all urls to /index.html)? Yes
+? Set up automatic builds and deploys with GitHub? No
+? File build/index.html already exists. Overwrite? Yes
+✔  Wrote build/index.html
+
+i  Writing configuration info to firebase.json...
+i  Writing project information to .firebaserc...
+
+✔  Firebase initialization complete!
+u@DESKTOP-J67KVSF:~/study/shin-blog-w-react-firebase$ npm run build
+
+> shin-blog-w-react-firebase@0.1.0 build
+> react-scripts build
+
+Creating an optimized production build...
+Compiled successfully.
+
+File sizes after gzip:
+
+  193.14 kB  build/static/js/main.fa126386.js
+  1.26 kB    build/static/css/main.ef2cc8e2.css
+
+The project was built assuming it is hosted at /.
+You can control this with the homepage field in your package.json.
+
+The build folder is ready to be deployed.
+You may serve it with a static server:
+
+  npm install -g serve
+  serve -s build
+
+Find out more about deployment here:
+
+  https://cra.link/deployment
+
+u@DESKTOP-J67KVSF:~/study/shin-blog-w-react-firebase$ firebase deploy
+(node:917611) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+=== Deploying to 'shin-discord-clone'...
+
+i  deploying hosting
+i  hosting[shin-discord-clone]: beginning deploy...
+i  hosting[shin-discord-clone]: found 14 files in build
+✔  hosting[shin-discord-clone]: file upload complete
+i  hosting[shin-discord-clone]: finalizing version...
+✔  hosting[shin-discord-clone]: version finalized
+i  hosting[shin-discord-clone]: releasing new version...
+✔  hosting[shin-discord-clone]: release complete
+
+✔  Deploy complete!
+
+Project Console: https://console.firebase.google.com/project/shin-discord-clone/overview
+Hosting URL: https://shin-discord-clone.web.app
