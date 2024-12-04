@@ -13,7 +13,7 @@
     .serverIcon {
       width: 60px;
       height: 60px;
-      background-color: #35393E;
+      background-color: #35393e;
       border-radius: 9999px; // 完全な円形にする。
       margin-top: 10px;
       margin-bottom: 10px;
@@ -39,7 +39,7 @@
   }
 
   .sidebarRight {
-    background-color: #2F3136;
+    background-color: #2f3136;
     width: 300px;
     position: relative;
     flex-grow: 1; // 空いている余白を成長させて一杯一杯使ってみる。<->成長させたくない場合は0。
@@ -79,7 +79,7 @@
       align-items: center;
       justify-content: space-between;
       width: 93%;
-      padding: 10px;
+      padding-bottom: 10px;
       border-top: 1px solid #686e6e;
       padding-top: 10px;
       margin-left: -3px;
