@@ -89,9 +89,14 @@ const Chat = () => {
 
       {/* chatMessages */}
       <div className="chatMessages">
-        <ChatMessage />
-        <ChatMessage />
-        <ChatMessage />
+        {messages.map((message, index) => (
+          <ChatMessage
+            key={index} // 本当は良くない。削除したときなど連番が崩れる。
+            message={message.message}
+            timestamp={message.timestamp}
+            user={message.user}
+          />
+        ))}
       </div>
 
       {/* chatInput */}
